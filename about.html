@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name=" viewpoint" content="width=device-width, initial-scale= 1.0">
+        <title> Nishtha's Art Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class ="header">
+            <nav>
+                <a href="index.html"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="awareness.html">AWARENESS ART</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="text-box">
+           
+            <h4>Designed and coded with ❤️</h4><br><h1>Nishtha Sharma</h1>
+            
+        </div>
+        </section>
+    </body>
+
+    <h3 id="typing-text"></h3>
+
+    <script>
+        
+        const textToType = "ASTROPHILE. ARTIST. PROGRAMMER.";
+
+        // DOM element where the typing effect will be displayed
+        const typingTextElement = document.getElementById("typing-text");
+
+        // Function to display the typing effect
+        function typeText() {
+            let charIndex = 0;
+            const typingInterval = 150; // Adjust the typing speed (in milliseconds)
+
+            function typeCharacter() {
+                if (charIndex < textToType.length) {
+                    typingTextElement.textContent += textToType.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeCharacter, typingInterval);
+                }
+            }
+
+            typeCharacter();
+        }
+
+        // Start the typing effect when the page loads
+        typeText();
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="about">
+        <p>About Me</p><br>
+        <p>
+            Hello, I'm Nishtha, and I'm passionate about art. Painting has always been a way for me to express my creativity and emotions. 
+            As an astrophile, I draw inspiration from the universe's infinite beauty, which often reflects in my artworks.
+            I'm also a programmer, and I enjoy merging art and technology to create unique experiences. My art often focuses on raising social awareness, 
+            and I believe that art has the power to bring about positive change in our society.<br> My skills:<br> Python, C#, C++, JavaScript, HTML, CSS, PHP, Basic .NET.<BR>
+        
+            <br>
+              I work with various tools and software, including:
+
+            <br>
+            Visual Studio Code (VSCode), 
+                PyCharm,
+                Git,
+                LaTeX,
+                Astroinformatics,
+                Adobe Photoshop,
+               Adobe Premiere Pro,
+                Adobe After Effects,
+                Graphic Design (Canva).
+            
+            <br>
+            
+            </p>
+        </section>
+    </section>
+
+    </section>
+
+
+
+    <a class="social-button" href="https://github.com/NishthaSharma22">Github</a>
+    <a class="social-button" href="https://www.youtube.com/channel/UCMDRQNUk1vO5assUVAljGvA">YouTube</a>
+    <a class="social-button" href="https://www.instagram.com">LinkedIn</a>
+    <a class="social-button" href="https://www.indiaart.com/childrens-art/child-portfolio/15096/nishtha-sharma">My IndiaArt Portfolio</a>
+
+    <br><br><br><br>
+
+       
+
+
+ </section>
+
+
+
+
+
+
+
+
+ <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+    function hideMenu(){
+        navLinks.style.right= "-200px";
+    }
+</script>
+
+
+
+
+
+<footer>
+    <p>&copy; Nishtha Sharma 2020 <br>Disclaimer: No paintbrushes were harmed in the making of this website.</p>
+</footer>
+
+</html>
